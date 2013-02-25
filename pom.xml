@@ -56,7 +56,7 @@
 				  </execution>
 				</executions>
 			</plugin-->
-			<!--plugin>
+			<plugin>
 				<groupId>com.github.github</groupId>
 				<artifactId>site-maven-plugin</artifactId>
 				<version>0.7</version>
@@ -64,8 +64,7 @@
 					<override>true</override>
 					<message>Maven artifacts for ${project.version}</message>  
 					<noJekyll>true</noJekyll>
-					<outputDirectory>D:\workspace\Maven</outputDirectory> 
-					<branch>master</branch>
+					<outputDirectory>D:\workspace\Maven\target</outputDirectory> 
 					<includes><include>**/*</include></includes>
 				</configuration>
 				<executions>
@@ -76,14 +75,14 @@
 					<phase>deploy</phase>
 				  </execution>
 				</executions>
-			</plugin-->
+			</plugin>
 		</plugins>
 	</build>
 	<organization>
 		<name>Sebastien Diot</name>
 	</organization>
 	<scm>
-		<url>https://github.com/skunkiferous/Maven</url>
+		<url>https://raw.github.com/skunkiferous/Maven/master</url>
 	</scm>
 	<distributionManagement>
 		<repository>
