@@ -15,82 +15,12 @@
 		<module>../Primitiveable</module>
 		<module>../PrimitiveFunc</module>
 	</modules>
-	<properties>
-		<!-- github server corresponds to entry in ~/.m2/settings.xml -->
-		<github.global.server>github</github.global.server>
-	</properties>
 	<build>
-		<plugins>
-			<plugin>
-				<artifactId>maven-install-plugin</artifactId>
-				<version>2.3.1</version>
-				<configuration>
-					<skip>true</skip>
-				</configuration>
-			</plugin>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.2</version>
-				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
-				</configuration>
-			</plugin>
-			<!-- plugin>
-			  <groupId>com.github.github</groupId>
-			  <artifactId>downloads-maven-plugin</artifactId>
-			  <version>0.6</version>
-			  <configuration>
-				<description>${project.version} release of ${project.name}</description>
-				<override>true</override>
-				<includeAttached>true</includeAttached>
-				<branch>master</branch>
-				<includes><include>**/*</include></includes>
-			  </configuration>
-				<executions>
-				  <execution>
-					<goals>
-					  <goal>upload</goal>
-					</goals>
-					<phase>deploy</phase>
-				  </execution>
-				</executions>
-			</plugin-->
-			<plugin>
-				<groupId>com.github.github</groupId>
-				<artifactId>site-maven-plugin</artifactId>
-				<version>0.7</version>
-				<configuration>				
-					<override>true</override>
-					<message>Maven artifacts for ${project.version}</message>  
-					<noJekyll>true</noJekyll>
-					<outputDirectory>D:\workspace\Maven\target</outputDirectory> 
-					<includes><include>**/*</include></includes>
-				</configuration>
-				<executions>
-				  <execution>
-					<goals>
-					  <goal>site</goal>
-					</goals>
-					<phase>deploy</phase>
-				  </execution>
-				</executions>
-			</plugin>
-		</plugins>
 	</build>
 	<organization>
 		<name>Sebastien Diot</name>
 	</organization>
 	<scm>
-		<url>https://raw.github.com/skunkiferous/Maven/master</url>
+		<url>https://github.com/skunkiferous/Maven</url>
 	</scm>
-	<distributionManagement>
-		<repository>
-			<uniqueVersion>true</uniqueVersion>
-			<id>internal.repo</id>
-			<name>Main Repository</name>
-			<url>https://github.com/skunkiferous/Maven</url>
-			<layout>default</layout>
-		</repository>
-	</distributionManagement>	
 </project>
