@@ -15,23 +15,26 @@ Maven Instruction :
 	* /skunkiferous/Primitiveable.
 	* /skunkiferous/PrimitiveFunc.
 
+
 * Run the following command to build any one of these project.
- 
+ 	
 	mvn -DaltDeploymentRepository=internal::default::file://<ABSOLUTE_PATH_TO_MAVEN_PROJECT_FOLDER> deploy -pl ../Base40 -am deploy
-  
-   Note : 	1) This command is being executed from 'Maven' project directory.
-		1) Switch '-am' ('also make') also builds the other projects that this project is dependent on.
-		1) remove '-pl ../Base40 -am deploy' part to build all the projects.
+*Note:*  	
+ * This command is being executed from 'Maven' project directory.
+ * Switch '-am' ('also make') also builds the other projects that this project is dependent on.
+ * remove '-pl ../Base40 -am deploy' part to build all the projects.
 
 * Verify and commit the artifacts in github.
 
 * IMPORTANT : Increment the versions of all the projects that were deployed and pushed to github so that the future release artifacts do not overwrite them.
 
 * To include these artifacts as dependencies use following repository entry in your pom.xml.
-	
+
+```xml
 	<repositories>
 		<repository>
 			<id>blockwithme-mvn-repo</id>
 			<url>https://raw.github.com/skunkiferous/Maven/master</url>
-		</repository>
+		</repository>		
 	</repositories>
+```
