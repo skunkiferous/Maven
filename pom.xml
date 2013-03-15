@@ -10,10 +10,9 @@
 	<description>Manages the maven repository on Github.</description>
 	
 	<modules>
-		<module>../Base40</module>
 		<module>../Common</module>
-		<module>../Primitiveable</module>
 		<module>../PrimitiveFunc</module>
+		<module>../Hacktors</module>
 	</modules>
 	<build>
 	</build>
