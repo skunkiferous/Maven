@@ -10,9 +10,7 @@ Maven Instruction :
 * This script expects the following projects pulled from Github in a single parent folder (all the projects should be at same level):
 
 	* /skunkiferous/Maven.
-	* /skunkiferous/Base40
 	* /skunkiferous/Common.
-	* /skunkiferous/Primitiveable.
 	* /skunkiferous/PrimitiveFunc.
 
 
