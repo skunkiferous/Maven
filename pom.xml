@@ -45,6 +45,10 @@
 		<module>../PrimitiveFunc</module>
 		<module>../PrimitiveFunc/source-generation</module>
 		<module>../Common</module>
+		<module>../JActor2</module>
+		<module>../Time</module>
+		<module>../TimeImpl</module>
+		<module>../TActors</module>
 		<module>../Hacktors</module>
 	</modules>
 
