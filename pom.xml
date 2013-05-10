@@ -45,7 +45,9 @@
 		<module>../PrimitiveFunc</module>
 		<module>../PrimitiveFunc/source-generation</module>
 		<module>../Common</module>
-		<module>../JActor2</module>
+		<module>../JActor2/jactor-api</module>
+		<module>../JActor2/jactor-impl</module>
+		<module>../JActor2/jactor-util</module>
 		<module>../Time</module>
 		<module>../TimeImpl</module>
 		<module>../TActors</module>

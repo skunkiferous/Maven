@@ -6,11 +6,11 @@
     <parent>
         <groupId>org.agilewiki.jactor</groupId>
         <artifactId>jactor</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.0.1</version>
     </parent>
 
-    <artifactId>jactor-impl</artifactId>
-    <name>JActor-impl</name>
+    <artifactId>jactor-api</artifactId>
+    <name>JActor-API</name>
     <packaging>bundle</packaging>
 
     <build>
@@ -47,12 +47,8 @@
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Version>${project.version}</Bundle-Version>
                         <Export-Package>
-                            org.agilewiki.jactor.impl;version=${project.version}
+                            org.agilewiki.jactor.api;version=${project.version}
                         </Export-Package>
-                        <Import-Package>
-                            org.agilewiki.jactor.api;version=${project.version},
-                            *
-                        </Import-Package>
                     </instructions>
                 </configuration>
             </plugin>
@@ -60,11 +56,6 @@
     </build>
 
     <dependencies>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>jactor-api</artifactId>
-            <version>${project.version}</version>
-        </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>

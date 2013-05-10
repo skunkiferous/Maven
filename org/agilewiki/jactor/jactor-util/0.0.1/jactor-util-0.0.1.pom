@@ -6,13 +6,13 @@
     <parent>
         <groupId>org.agilewiki.jactor</groupId>
         <artifactId>jactor</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.0.1</version>
     </parent>
 
-    <artifactId>jactor-api</artifactId>
-    <name>JActor-API</name>
+    <artifactId>jactor-util</artifactId>
+    <name>JActor-util</name>
     <packaging>bundle</packaging>
- 
+
     <build>
         <plugins>
             <plugin>
@@ -46,9 +46,14 @@
                     <instructions>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Version>${project.version}</Bundle-Version>
+                        <Bundle-Activator>org.agilewiki.jactor.util.osgi.durable.DurablesActivator</Bundle-Activator>
                         <Export-Package>
-                            org.agilewiki.jactor.api;version=${project.version}
+                            org.agilewiki.jactor.util*;version=${project.version}
                         </Export-Package>
+                        <Import-Package>
+                            org.agilewiki.jactor.api;version=${project.version},
+                            *
+                        </Import-Package>
                     </instructions>
                 </configuration>
             </plugin>
@@ -56,6 +61,16 @@
     </build>
 
     <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>jactor-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>jactor-impl</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -88,11 +103,14 @@
             <artifactId>org.osgi.core</artifactId>
             <version>4.3.1</version>
             <scope>provided</scope>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.osgi</groupId>
             <artifactId>org.osgi.compendium</artifactId>
             <version>4.3.1</version>
+            <scope>provided</scope>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 </project>
