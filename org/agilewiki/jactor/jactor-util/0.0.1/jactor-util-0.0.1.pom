@@ -52,6 +52,7 @@
                         </Export-Package>
                         <Import-Package>
                             org.agilewiki.jactor.api;version=${project.version},
+                            org.slf4j;version="[1.6.4,*)",
                             *
                         </Import-Package>
                     </instructions>
