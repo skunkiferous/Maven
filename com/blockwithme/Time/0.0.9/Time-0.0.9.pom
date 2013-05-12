@@ -73,9 +73,9 @@
 						com.blockwithme.time.implapi;version=${project.version},
 						com.blockwithme.time.util;version=${project.version}</Export-Package>
                         <Import-Package>
-               			    org.threeten.bp;version="[0.8.1,*)",
-               			    org.threeten.bp.jdk8;version="[0.8.1,*)",
-               			    javax.inject;version="[1.0.0,*)"
+               			    org.threeten.bp;version="[0.8,1)",
+               			    org.threeten.bp.jdk8;version="[0.8,1)",
+               			    javax.inject;version="[1.0,2)"
               			</Import-Package>
 					</instructions>
 				</configuration>
@@ -106,12 +106,12 @@
 		<dependency>
 			<groupId>org.threeten</groupId>
 			<artifactId>threetenbp</artifactId>
-			<version>0.8.1</version>
+			<version>[0.8,1)</version>
 		</dependency>
 		<dependency>
 			<groupId>com.blockwithme</groupId>
 			<artifactId>javax-inject</artifactId>
-			<version>1.0.0</version>
+			<version>[1.0,2)</version>
 		</dependency>
    	</dependencies>
 

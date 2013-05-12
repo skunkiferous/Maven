@@ -69,7 +69,9 @@
 					<manifestLocation>${project.basedir}/META-INF</manifestLocation>
 					<instructions>
 						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
-						<Export-Package>com.blockwithme.util,com.blockwithme.base40,com.blockwithme.prim</Export-Package>
+						<Export-Package>com.blockwithme.util;version=${project.version},
+							com.blockwithme.base40;version=${project.version},
+							com.blockwithme.prim;version=${project.version}</Export-Package>
 					</instructions>
 				</configuration>
 			</plugin>
