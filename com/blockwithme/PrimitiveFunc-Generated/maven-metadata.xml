@@ -3,10 +3,11 @@
   <groupId>com.blockwithme</groupId>
   <artifactId>PrimitiveFunc-Generated</artifactId>
   <versioning>
-    <release>0.0.3</release>
+    <release>1.0.0</release>
     <versions>
       <version>0.0.3</version>
+      <version>1.0.0</version>
     </versions>
-    <lastUpdated>20130512135955</lastUpdated>
+    <lastUpdated>20130806180026</lastUpdated>
   </versioning>
 </metadata>
