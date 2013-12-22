@@ -18,13 +18,13 @@ Maven Instruction :
 
 ``` 	
 	mvn -DaltDeploymentRepository=internal::default::file://<ABSOLUTE_PATH_TO_MAVEN_PROJECT_FOLDER> ^
-	deploy -pl ../Base40 -am deploy
+	deploy -pl ../Common -am deploy
 ```
 
 *Note:*  	
  * This command is being executed from 'Maven' project directory.
  * Switch '-am' ('also make') also builds the other projects that this project is dependent on.
- * remove '-pl ../Base40 -am deploy' part to build all the projects.
+ * remove '-pl ../Common -am deploy' part to build all the projects.
 
 * Verify and commit the artifacts in github.
 

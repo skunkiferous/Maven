@@ -43,9 +43,12 @@
 	
 	<modules>
 		<module>../Common</module>
-<!--		<module>../PrimitiveFunc</module>
-		<module>../PrimitiveFunc/source-generation</module>
-		<module>../JActor2/jactor-api</module>
+		<module>../PrimitiveFunc/FuncGenerator</module>
+		<module>../PrimitiveFunc/FuncGenerated/012</module>
+		<module>../PrimitiveFunc/FuncGenerated/3</module>
+		<module>../PrimitiveFunc/FuncGenerated/4</module>
+		<module>../PrimitiveFunc/FuncGenerated/5</module>
+<!--		<module>../JActor2/jactor-api</module>
 		<module>../JActor2/jactor-impl</module>
 		<module>../JActor2/jactor-util</module>
 		<module>../Time</module>
