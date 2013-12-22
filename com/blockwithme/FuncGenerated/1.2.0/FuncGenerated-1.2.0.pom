@@ -1,0 +1,64 @@
+<!-- * Copyright (C) 2013 Sebastien Diot. * * Licensed under the Apache License,
+	Version 2.0 (the "License"); * you may not use this file except in compliance
+	with the License. * You may obtain a copy of the License at * * http://www.apache.org/licenses/LICENSE-2.0
+	* * Unless required by applicable law or agreed to in writing, software *
+	distributed under the License is distributed on an "AS IS" BASIS, * WITHOUT
+	WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. * See the
+	License for the specific language governing permissions and * limitations
+	under the License. -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.blockwithme</groupId>
+	<artifactId>FuncGenerated</artifactId>
+	<version>1.2.0</version>
+	<packaging>pom</packaging>
+
+	<name>FuncGenerated</name>
+	<description>Sub project of PrimitiveFunc - actually generates 'Function' interface based on user inputs.</description>
+	<organization>
+		<name>Sebastien Diot</name>
+	</organization>
+	<url>https://github.com/skunkiferous/PrimitiveFunc</url>
+
+	<scm>
+		<connection>scm:git:git@github.com:skunkiferous/PrimitiveFunc.git</connection>
+		<developerConnection>scm:git:git@github.com:skunkiferous/PrimitiveFunc.git</developerConnection>
+		<url>git@github.com:skunkiferous/PrimitiveFunc.git</url>
+	</scm>
+
+	<developers>
+		<developer>
+			<id>skunkiferous</id>
+			<name>Sebastien Diot</name>
+			<email>s.diot@eurodata.de</email>
+		</developer>
+	</developers>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven-compiler-plugin-version>2.5.1</maven-compiler-plugin-version>
+		<maven-clean-plugin-version>2.5</maven-clean-plugin-version>
+		<exec-maven-plugin-version>1.2.1</exec-maven-plugin-version>
+		<maven-bundle-plugin-version>2.4.0</maven-bundle-plugin-version>
+		<maven-jar-plugin-version>2.3.2</maven-jar-plugin-version>
+		<maven-source-plugin-version>2.2.1</maven-source-plugin-version>
+		<java-source-version>1.7</java-source-version>
+		<java-target-version>1.7</java-target-version>
+
+		<packageName>com.blockwithme.fn</packageName>
+		<licenseFile>${project.basedir}/../../APACHE_LICENSE_HEADER.txt</licenseFile>
+		<procNamePrefix>Proc</procNamePrefix>
+		<funcNameInfix>Func</funcNameInfix>
+		<function>apply</function>
+		<minParam>0</minParam>
+		<maxParam>2</maxParam>
+		<shortName>false</shortName>
+		<filter>com.blockwithme.fn.gen.ThreePlusXO</filter>
+		<exceptions></exceptions>
+    </properties>
+
+	<build>
+	</build>
+</project>

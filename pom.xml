@@ -45,6 +45,7 @@
 		<module>../Common</module>
 		<module>../PrimitiveFunc/Util</module>
 		<module>../PrimitiveFunc/FuncGenerator</module>
+		<module>../PrimitiveFunc/FuncGenerated</module>
 		<module>../PrimitiveFunc/FuncGenerated/012</module>
 		<module>../PrimitiveFunc/FuncGenerated/3</module>
 		<module>../PrimitiveFunc/FuncGenerated/4</module>
