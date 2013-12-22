@@ -13,7 +13,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.blockwithme</groupId>
 	<artifactId>Maven</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2</version>
 	<packaging>pom</packaging>
 	<name>${project.artifactId}</name>
 	<description>Manages the maven repository on Github.</description>
@@ -43,6 +43,7 @@
 	
 	<modules>
 		<module>../Common</module>
+		<module>../PrimitiveFunc/Util</module>
 		<module>../PrimitiveFunc/FuncGenerator</module>
 		<module>../PrimitiveFunc/FuncGenerated/012</module>
 		<module>../PrimitiveFunc/FuncGenerated/3</module>
