@@ -3,7 +3,7 @@ Maven
 
 Temporary Maven repository, until I add my artifacts to Maven Central ...
 
-Most things here should be Apache licensed, but please check the individual projects.
+Most things here should be Apache licensed, but please check the individual projects; there might be forks of thrid-party projects too.
 
 Maven Instruction :
 
@@ -21,7 +21,12 @@ Maven Instruction :
 	deploy -pl ../Common -am deploy
 ```
 
-*Note:*  	
+Example:
+
+mvn -DaltDeploymentRepository=internal::default::file://D:/GithubPublic/Maven deploy -pl ../oss-parent
+
+*Note:*
+ * Recently, I got errors if a project *and it's parent* are both refered at the same time as modules. So I need to deploy them "separetly".
  * This command is being executed from 'Maven' project directory.
  * Switch '-am' ('also make') also builds the other projects that this project is dependent on.
  * remove '-pl ../Common -am deploy' part to build all the projects.
