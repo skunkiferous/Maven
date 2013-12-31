@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.blockwithme</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>0.0.6</version>
+	</parent>
+
+	<groupId>com.blockwithme</groupId>
+	<artifactId>xtend-contrib-parent</artifactId>
+	<version>0.0.3</version>
+	<packaging>pom</packaging>
+	<inceptionYear>2013</inceptionYear>
+	<name>Xtend Contrib Parent</name>
+	<description>
+		A collection of Xtend extension methods and active annotations
+		that make working with popular libraries even more fun.
+	</description>
+
+	<scm>
+		<connection>scm:git:git://github.com/skunkiferous/xtend-contrib.git</connection>
+		<developerConnection>scm:git:git@github.com:skunkiferous/xtend-contrib.git</developerConnection>
+		<url>https://github.com/skunkiferous/xtend-contrib</url>
+	  <tag>HEAD</tag>
+       </scm>
+
+	<issueManagement>
+		<system>Github Issues</system>
+		<url>https://github.com/skunkiferous/xtend-contrib/issues</url>
+	</issueManagement>
+
+	<licenses>
+		<license>
+			<name>MIT</name>
+			<distribution>repo</distribution>
+			<url>http://opensource.org/licenses/MIT</url>
+		</license>
+	</licenses>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.eclipse.xtend</groupId>
+			<artifactId>org.eclipse.xtend.lib</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.xtend</groupId>
+			<artifactId>org.eclipse.xtend.core</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.xtend</groupId>
+				<artifactId>xtend-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+	<modules>
+		<module>base</module>
+		<module>examples</module>
+	</modules>
+</project>
