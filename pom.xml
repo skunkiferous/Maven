@@ -42,7 +42,6 @@
 	</properties>
 	
 	<modules>
-		<module>../Common</module>
 		<module>../PrimitiveFunc/Util</module>
 		<module>../PrimitiveFunc/FuncGenerator</module>
 <!--		<module>../PrimitiveFunc/FuncGenerated/parent</module>-->
