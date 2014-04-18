@@ -56,6 +56,7 @@
 		<module>../Util/UtilServer</module>
 		<module>../Util/UtilPrototypes</module>
 		<module>../Util/UtilClient</module>
+
 		<module>../oss-parent</module>
 
 <!--		<module>../JActor2/jactor-api</module>
