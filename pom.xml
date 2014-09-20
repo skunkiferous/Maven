@@ -50,12 +50,18 @@
 		<module>../PrimitiveFunc/FuncGenerated/4</module>
 		<module>../PrimitiveFunc/FuncGenerated/5</module>
 <!--
-		<module>../Util/UtilParent</module>
-		<module>../Util/UtilBase</module>
-		<module>../Util/UtilShared</module>
-		<module>../Util/UtilServer</module>
-		<module>../Util/UtilPrototypes</module>
-		<module>../Util/UtilClient</module>
+		<module>../Util</module>
+-->
+		<module>../Util/base</module>
+		<module>../Util/shared</module>
+		<module>../Util/server</module>
+		<module>../Util/prototypes</module>
+		<module>../Util/client</module>
+		<module>../Util/xtend</module>
+		<module>../Util/jactor2-coreSt</module>
+
+<!-- We really dont need that in the repo
+		<module>../Util/wwtest</module>
 -->
 
 		<module>../oss-parent</module>
